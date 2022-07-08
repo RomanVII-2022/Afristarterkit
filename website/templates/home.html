@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+
+
+
+    <!-- Detail Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="mb-5">
+                        <div class="d-flex mb-2">
+                            <h7 class="text-secondary text-uppercase font-weight-medium">By</h7>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a>
+                        </div>
+                        <a class="section-title text-dark mb-2" href=""><h4>Mali-based insurtech OKO raises $500k seed extension round for Ivory Coast expansion</h4></a>
+                    </div>
+                    <div class="mb-5">
+                        <img class="img-fluid rounded w-100 mb-4" src="{% static 'website/img/try-1.jpg' %}" alt="Image">
+                        <p>We assist the African founders of early-stage tech and tech-enabled companies to focus on what the continent needs right now – the rapid growth of businesses solving real-world problems combined with the creation of high-value jobs in sustainable ventures. We are proud to have helped many founders close their seed funding rounds in 4-6 weeks, notably faster than the 4-6 months it typically takes for early-stage founders to close rounds in Africa,” said George.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/try-2.jpg' %}" alt="" class="img-fluid rounded">
+                        <a class="text-dark mb-2" href=""><h5>Investor LocalGlobe Morphs Into Lifestage VC, Phoenix Court Group And Eyes Europe’s “New Palo Alto”</h5>
+                        <div class="d-flex mb-1">
+                            <h9 class="text-secondary text-uppercase font-weight-small">By</h9>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">January 01, 2045</a>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/try-3.jpg' %}" alt="" class="img-fluid rounded">
+                        <a class="text-dark mb-2" href="single.html"><h5>Kenyan, Ugandan entrepreneurs selected for hardware-led social innovation accelerator</h5>
+                        <div class="d-flex mb-1">
+                            <h9 class="text-secondary text-uppercase font-weight-small">By</h9>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">January 01, 2045</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Detail End -->
+
+    <!-- Blog Start -->
+    <div class="container-fluid pt-5">
+        <div class="container pt-5">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h3 class="section-title mb-3">Latest Articles</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/try-5.jpg' %}" alt="" class="img-fluid rounded">
+                        <a class="text-dark mb-2" href=""><h5>South African cleaning service startup SweepSouth expands to Nigeria</h5>
+                        <div class="d-flex mb-1">
+                            <h9 class="text-secondary text-uppercase font-weight-small">By</h9>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">January 01, 2045</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/try-6.jpg' %}" alt="" class="img-fluid rounded">
+                        <a class="text-dark mb-2" href=""><h5>Kenyan, Ugandan entrepreneurs selected for hardware-led social innovation accelerator</h5>
+                        <div class="d-flex mb-1">
+                            <h9 class="text-secondary text-uppercase font-weight-small">By</h9>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">January 01, 2045</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="mb-5">
+                        <img src="{% static 'website/img/try-7.jpg' %}" alt="" class="img-fluid rounded">
+                        <a class="text-dark mb-2" href=""><h5>Investor LocalGlobe Morphs Into Lifestage VC, Phoenix Court Group And Eyes Europe’s “New Palo Alto”</h5>
+                        <div class="d-flex mb-1">
+                            <h9 class="text-secondary text-uppercase font-weight-small">By</h9>
+                            <span class="text-primary px-1"></span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">Julius Njeri</a>
+                            <span class="text-primary px-2">|</span>
+                            <a class="text-secondary text-uppercase font-weight-small" href="">January 01, 2045</a>
+                        </div>
+                    </div>
+                    <a class="btn btn-sm btn-primary py-2" href="{% url 'latest' %}">More on Latest Articles</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+    <!-- Recent Post -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="mb-5">
+                <h3 class="mb-4 section-title">More From Afristarter Kit</h3>
+                <div class="d-flex align-items-center border-bottom mb-3 pb-3">
+                    <div class="col-lg-7 pt-lg-5 pb-3">
+                        <div class="d-flex flex-column pl-3">
+                            <a class="text-dark mb-4" href=""><h5>9 African startups selected for Norrsken Impact Accelerator</h5></a>
+                            <div class="d-flex">
+                                <small><h7 class="text-secondary text-uppercase font-weight-medium">By</h7></small>
+                                <small class="text-primary px-1"></small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a></small>
+                                <small class="text-primary px-2">|</small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="{% static 'website/img/try-8.jpg' %}" style="width: 300px; height: 150px; object-fit: cover;" alt="">
+                </div>
+                <div class="d-flex align-items-center border-bottom mb-3 pb-3">
+                    <div class="col-lg-7 pt-lg-5 pb-3">
+                        <div class="d-flex flex-column pl-3">
+                            <a class="text-dark mb-4" href=""><h5>Draper Startup House adds locations in Malawi, Namibia</h5></a>
+                            <div class="d-flex">
+                                <small><h7 class="text-secondary text-uppercase font-weight-medium">By</h7></small>
+                                <small class="text-primary px-1"></small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a></small>
+                                <small class="text-primary px-2">|</small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="{% static 'website/img/try-9.jpg' %}" style="width: 300px; height: 150px; object-fit: cover;" alt="">
+                </div>
+                <div class="d-flex align-items-center border-bottom mb-3 pb-3">
+                    <div class="col-lg-7 pt-lg-5 pb-3">
+                        <div class="d-flex flex-column pl-3">
+                            <a class="text-dark mb-4" href=""><h5>Second India Africa Entrepreneurship and Investment Summit set for July</h5></a>
+                            <div class="d-flex">
+                                <small><h7 class="text-secondary text-uppercase font-weight-medium">By</h7></small>
+                                <small class="text-primary px-1"></small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a></small>
+                                <small class="text-primary px-2">|</small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="{% static 'website/img/try-10.jpg' %}" style="width: 300px; height: 150px; object-fit: cover;" alt="">
+                </div>
+                <div class="d-flex align-items-center border-bottom mb-3 pb-3">
+                    <div class="col-lg-7 pt-lg-5 pb-3">
+                        <div class="d-flex flex-column pl-3">
+                            <a class="text-dark mb-4" href=""><h5>6th edition of Lagos Startup Week set for July</h5></a>
+                            <div class="d-flex">
+                                <small><h7 class="text-secondary text-uppercase font-weight-medium">By</h7></small>
+                                <small class="text-primary px-1"></small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a></small>
+                                <small class="text-primary px-2">|</small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="{% static 'website/img/try-11.jpg' %}" style="width: 300px; height: 150px; object-fit: cover;" alt="">
+                </div>
+                <div class="d-flex align-items-center border-bottom mb-3 pb-3">
+                    <div class="col-lg-7 pt-lg-5 pb-3">
+                        <div class="d-flex flex-column pl-3">
+                            <a class="text-dark mb-4" href=""><h5>How Nigerian agri-tech startup Rural Farmers Hub is boosting yields in post-insurgency areas</h5></a>
+                            <div class="d-flex">
+                                <small><h7 class="text-secondary text-uppercase font-weight-medium">By</h7></small>
+                                <small class="text-primary px-1"></small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">Julius Njeri</a></small>
+                                <small class="text-primary px-2">|</small>
+                                <small><a class="text-secondary text-uppercase font-weight-medium" href="">January 01, 2045</a></small>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="img-fluid rounded" src="{% static 'website/img/try-12.jpg' %}" style="width: 300px; height: 150px; object-fit: cover;" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recent Post End -->
+
+{% endblock %}
+
+    

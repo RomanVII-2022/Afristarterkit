@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Contact Afristarter Kit {% endblock %}
+
+{% block content %}
+
+
+    
+
+
+    <!-- Contact Start -->
+    {% if message_name %}
+        <center>
+            <h2>Thanks {{ message_name }}!</h2>
+            <p>We received your email and will respondshortly...</p>
+        </center>
+        <br/><br/><br/>
+    {% else %}
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row align-items-end mb-4">
+                <div class="col-lg-6">
+                    <h1 class="section-title mb-3">Contact Us For Our Services{{ message_name }}</h1>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="font-weight-normal text-muted mb-3">Eirmod kasd duo eos et magna, diam dolore stet sea clita sit ea erat lorem. Ipsum eos ipsum magna lorem stet</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form action="{% url 'contact' %}" method="post" name="sentMessage" id="contactForm" novalidate="novalidate">
+                            {% csrf_token %}
+                            <div class="form-row">
+                                <div class="col-sm-6 control-group">
+                                    <input type="text" name="message-name" class="form-control p-4" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="col-sm-6 control-group">
+                                    <input type="email" name="message-email" class="form-control p-4" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" name="message-subject" class="form-control p-4" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="control-group">
+                                <textarea name="message" class="form-control p-4" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-block py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="min-height: 400px;">
+                    <div class="position-relative h-100 rounded overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39059.807682694794!2d36.73444747976745!3d-1.3093910733645995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1af89e77803b%3A0x3feb567b4678bf10!2sNgong%20Race%20Course!5e0!3m2!1sen!2ske!4v1656910300805!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <!-- Contact End -->
+
+
+{% endblock %}
